@@ -2,17 +2,17 @@ import re
 
 def get_clean_data():
     import os
-    
+
     # get input file path
     file_path = os.path.join(os.getcwd(), 'input.txt')
-    
+
     # read input file data as list of lines
     with open(file_path) as f:
         lines = f.readlines()
-    
+
     # clean lines - remove new line character
     lines = [line.replace('\n','') for line in lines]
-    
+
     return lines
 
 passports = get_clean_data()
@@ -36,20 +36,20 @@ for index, line in enumerate(passports):
         for element in elements:
             key = element.split(':')[0]
             current_keys.append(key)
-            
+
     if index == (len(passports) - 1):
         all_mandatory = all(key in current_keys for key in mandatory_keys)
         if all_mandatory:
             valid_passports_p1 += 1
 
-print("Part 1 - Answer:", valid_passports_p1)
+print("Part 1 Answer:", valid_passports_p1)
 
 # Part 2
 
 def is_valid(item):
     key = item[0]
     value = item[1]
-    
+
     if key == 'byr':
         value = int(value)
         if (1920 <= value) and (value <= 2002):
@@ -89,7 +89,7 @@ def is_valid(item):
         return bool(match)
     else:
         return True
-    
+
 valid_passports_p2 = 0
 current_passport = dict()
 
@@ -106,11 +106,11 @@ for index, line in enumerate(passports):
             key = element.split(':')[0]
             value = element.split(':')[1]
             current_passport[key] = value
-            
+
     if index == (len(passports) - 1):
         all_valid = all(is_valid(item) for item in current_passport.items())
         all_mandatory = all(key in current_passport.keys() for key in mandatory_keys)
         if all_mandatory and all_valid:
             valid_passports_p2 += 1
-            
-print("Part 2 - Answer:", valid_passports_p2)
+
+print("Part 2 Answer:", valid_passports_p2)

@@ -16,10 +16,9 @@ target = 2020
 for item in report:
     difference = target - item
     if difference in report:
-        print("Result is: {} + {} = {}".format(item, difference, item + difference), end='; ')
-        print("Answer is: {} * {} = {}".format(item, difference, item * difference))
+        print("Part 1 Answer: {} * {} = {}".format(item, difference, item * difference))
         break
-        
+
 
 # find triplet of numbers adding up to 2020
 found = False
@@ -28,8 +27,7 @@ for i in report:
         if i + j < target:
             difference = target - (i + j)
             if difference in report:
-                print("Result is: {} + {} + {} = {}".format(i, j, difference, i + j + difference), end='; ')
-                print("Answer is: {} * {} * {} = {}".format(i, j, difference, i * j * difference))
+                print("Part 2 Answer: {} * {} * {} = {}".format(i, j, difference, i * j * difference))
                 found = True
                 break
         if found:
