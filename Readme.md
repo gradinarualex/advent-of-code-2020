@@ -16,3 +16,4 @@ I'm solving these problems in python, and you will find all results in python sc
 | [06](https://adventofcode.com/2020/day/6) | Custom Customs | ⭐⭐ |
 | [07](https://adventofcode.com/2020/day/7) | Handy Haversacks | ⭐⭐ |
 | [08](https://adventofcode.com/2020/day/8) | Handheld Halting | ⭐⭐ |
+| [09](https://adventofcode.com/2020/day/9) | Encoding Error | ⭐⭐ |

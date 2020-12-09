@@ -51,15 +51,12 @@ print("Part 1 Answer:", accumulator_p1)
 # Part 2
 
 # check if booting finishes (True if finishes, false if not)
-
 def is_booting(instructions):
-    accumulator = 0
     index = 0
-
     visited_indexes = []
 
     is_looping = False
-    while (index not in visited_indexes) and (index < len(instructions)):
+    while (not is_looping) and (index < len(instructions)):
         command = instructions[index]
         operation, argument = command.split()
         argument = int(argument)
@@ -67,7 +64,6 @@ def is_booting(instructions):
         visited_indexes.append(index)
 
         if operation == 'acc':
-            accumulator += argument
             index += 1
         elif operation == 'nop':
             index += 1
