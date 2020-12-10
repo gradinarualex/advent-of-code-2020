@@ -1,16 +1,17 @@
 def get_clean_data():
     import os
-    
+
     # get input file path
-    file_path = os.path.join(os.getcwd(), 'input.txt')
-    
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    file_path = os.path.join(dir_path, 'input.txt')
+
     # read input file data as list of lines
     with open(file_path) as f:
         lines = f.readlines()
-    
+
     # clean lines - remove new line character
     lines = [line.replace('\n','') for line in lines]
-    
+
     return lines
 
 answers = get_clean_data()
@@ -26,16 +27,16 @@ for index, line in enumerate(answers):
         all_answers = ''.join(group_answers)
         unique_group_answers = len(set(all_answers))
         unique_answers += unique_group_answers
-        
+
         group_answers = []
     else:
         group_answers.append(line)
-            
+
     if index == (len(answers) - 1):
         all_answers = ''.join(group_answers)
         unique_group_answers = len(set(all_answers))
         unique_answers += unique_group_answers
-        
+
 print("Part 1 Answer:", unique_answers)
 
 
@@ -54,7 +55,7 @@ for index, line in enumerate(answers):
             group_common = passenger_answers
         else:
             group_common = [answer for answer in passenger_answers if answer in group_common]
-        
+
     if index == (len(answers) - 1):
         unanimous_answers += len(group_common)
 

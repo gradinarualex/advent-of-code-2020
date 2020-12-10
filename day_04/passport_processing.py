@@ -4,7 +4,8 @@ def get_clean_data():
     import os
 
     # get input file path
-    file_path = os.path.join(os.getcwd(), 'input.txt')
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    file_path = os.path.join(dir_path, 'input.txt')
 
     # read input file data as list of lines
     with open(file_path) as f:

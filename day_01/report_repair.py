@@ -1,14 +1,24 @@
 import os
 
-# get input file path
-file_path = os.path.join(os.getcwd(), 'input.txt')
+# Define function that reads and processes input file (clean newline from each row)
+def get_clean_data():
+    import os
 
-# read input file data as list of lines
-with open(file_path) as f:
-    report = f.readlines()
+    # get input file path
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    file_path = os.path.join(dir_path, 'input.txt')
 
-# clean lines - remove new line character and convert to integer
-report = [int(item.replace('\n','')) for item in report]
+    # read input file data as list of lines
+    with open(file_path) as f:
+        lines = f.readlines()
+
+    # clean lines - remove new line character
+    lines = [line.replace('\n','') for line in lines]
+
+    return lines
+
+report = get_clean_data() # read data in
+report = [int(item) for item in report] # convert elements to int
 
 target = 2020
 
