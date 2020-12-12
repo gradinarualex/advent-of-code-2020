@@ -18,3 +18,5 @@ I'm solving these problems in python, and you will find all results in python sc
 | [08](https://adventofcode.com/2020/day/8) | Handheld Halting | ⭐⭐ |
 | [09](https://adventofcode.com/2020/day/9) | Encoding Error | ⭐⭐ |
 | [10](https://adventofcode.com/2020/day/10) | Adapter Array | ⭐⭐ |
+| [11](https://adventofcode.com/2020/day/11) | Seating System | ⭐⭐ |
+| [12](https://adventofcode.com/2020/day/12) | Rain Risk | ⭐⭐ |

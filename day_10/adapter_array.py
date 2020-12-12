@@ -50,7 +50,7 @@ def count_steps(position):
         return position_steps[position]
     
     # the count of all possible ways to reach the end is the sum
-    # of all ways to reach the next steps, if within 3 jolts
+    # of all ways to reach the previous steps, if within 3 jolts
     count = 0
     for ulterior_position in range(position + 1, len(sorted_jolts)):
         if sorted_jolts[ulterior_position] - sorted_jolts[position] <= 3:
