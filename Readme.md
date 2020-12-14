@@ -21,3 +21,4 @@ I'm solving these problems in python, and you will find all results in python sc
 | [11](https://adventofcode.com/2020/day/11) | Seating System | ⭐⭐ |
 | [12](https://adventofcode.com/2020/day/12) | Rain Risk | ⭐⭐ |
 | [13](https://adventofcode.com/2020/day/13) | Shuttle Search | ⭐⭐ |
+| [14](https://adventofcode.com/2020/day/14) | Docking Data | ⭐⭐ |
