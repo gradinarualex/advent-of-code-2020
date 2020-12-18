@@ -23,3 +23,5 @@ I'm solving these problems in python, and you will find all results in python sc
 | [13](https://adventofcode.com/2020/day/13) | Shuttle Search | ⭐⭐ |
 | [14](https://adventofcode.com/2020/day/14) | Docking Data | ⭐⭐ |
 | [15](https://adventofcode.com/2020/day/15) | Rambunctious Recitation | ⭐⭐ |
+| [16](https://adventofcode.com/2020/day/16) | Ticket Translation | ⭐⭐ |
+| [17](https://adventofcode.com/2020/day/17) | Conway Cubes | ⭐⭐ |
