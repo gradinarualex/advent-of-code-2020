@@ -25,3 +25,4 @@ I'm solving these problems in python, and you will find all results in python sc
 | [15](https://adventofcode.com/2020/day/15) | Rambunctious Recitation | ⭐⭐ |
 | [16](https://adventofcode.com/2020/day/16) | Ticket Translation | ⭐⭐ |
 | [17](https://adventofcode.com/2020/day/17) | Conway Cubes | ⭐⭐ |
+| [18](https://adventofcode.com/2020/day/18) | Operation Order | ⭐⭐ |
